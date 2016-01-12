@@ -4,71 +4,39 @@
     android:layout_height="wrap_content"
     android:padding="6dip">
 
-    <!--<TextView-->
-        <!--android:id="@+id/linkTitle"-->
-        <!--android:layout_width="fill_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_alignParentRight="true"-->
-        <!--android:layout_alignParentTop="true"-->
-        <!--android:layout_alignWithParentIfMissing="true"-->
-        <!--android:text="Link Title"-->
-        <!--android:textSize="16sp"/>-->
-
-    <!--<TextView-->
-        <!--android:id="@+id/linkSubmitted"-->
-        <!--android:layout_width="fill_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_below="@id/linkTitle"-->
-        <!--android:text="Submitted 1 hour ago by me"-->
-        <!--android:textSize="16sp"-->
-        <!--android:layout_alignParentTop="true"-->
-        <!--android:layout_alignParentRight="true"-->
-        <!--android:layout_alignParentEnd="true" />-->
-
-    <!--<TextView-->
-        <!--android:id="@+id/commentCount"-->
-        <!--android:layout_width="fill_parent"-->
-        <!--android:layout_height="26dip"-->
-        <!--android:layout_alignParentBottom="true"-->
-        <!--android:layout_alignParentRight="true"-->
-        <!--android:ellipsize="marquee"-->
-        <!--android:singleLine="true"-->
-        <!--android:text="No of comments"-->
-        <!--android:textSize="12sp" />-->
-
     <TextView
         android:id="@+id/textLinkTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Link Title Text"
-        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Link Title Text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
         android:id="@+id/textLinkSubmitted"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Link Submitted Text"
-        android:layout_below="@+id/textLinkTitle"
+        android:layout_alignEnd="@+id/textLinkTitle"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignRight="@+id/textLinkTitle"
-        android:layout_alignEnd="@+id/textLinkTitle" />
+        android:layout_below="@+id/textLinkTitle"
+        android:text="Link Submitted Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
         android:id="@+id/textComments"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Comment Text"
-        android:layout_below="@+id/textLinkSubmitted"
+        android:layout_alignEnd="@+id/textLinkSubmitted"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignRight="@+id/textLinkSubmitted"
-        android:layout_alignEnd="@+id/textLinkSubmitted" />
+        android:layout_below="@+id/textLinkSubmitted"
+        android:text="Comment Text"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
 </RelativeLayout>
